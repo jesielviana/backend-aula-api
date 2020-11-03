@@ -1,5 +1,6 @@
 const express = require('express');
-const postagemRoutes = require('./postagensRoutes');
+const postagemRoutes = require('./postagens');
+const usuariosRoutes = require('./usuarios');
 
 
 const router = express.Router();
@@ -10,6 +11,7 @@ router.get('/', (req, res) => {
 
 router.use('/postagens', postagemRoutes);
 
-// router.use('/users', )
+router.use('/usuarios', usuariosRoutes);
+
 
 module.exports = router;

@@ -14,7 +14,21 @@ class Postagens {
     return postagens;
   }
 
-  async alterarPorId (id, postagemDTO) { 
+
+  async consultaPorId(id) {
+    try {
+      return await this.Postagem.findById(id, '_id titulo texto dataAlteracao autor');
+    } catch (err) {
+      throw new Error(err);
+    }
+  }
+
+  async consultarPorAutor(autor) { 
+    const postagens = await this.Postagem.find( {autor : autor}, null, { sort: {dataAlteracao: -1}});
+    return postagens;
+  }
+
+  async alterar (id, postagemDTO) { 
     await this.Postagem.updateOne({_id: id}, postagemDTO);
   }
 }
