@@ -19,13 +19,13 @@ router.get('/', (req, res) => {
   para adicionar um novo usuário. <br>  O usuário deve conter os seguintes
   atributos { nome: String, idade: Number }</p>
 
-  <h3> API de Posts</h3>
-  <p>GET <a href="https://ifpi-web-nodejs.herokuapp.com/posts">https://ifpi-web-nodejs.herokuapp.com/usuarios</a>
-  para consultar todos os posts cadastrados. <br> É retornado uma lista de posts 
+  <h3> API de Postagens</h3>
+  <p>GET <a href="https://ifpi-web-nodejs.herokuapp.com/postagens">https://ifpi-web-nodejs.herokuapp.com/postagens</a>
+  para consultar todas postagens cadastrados. <br> É retornado uma lista de postagens 
   com o seguinte formato: {titulo: String, texto: String, dataAlteracao: Date, autor: String, id: String}</p>
 
-  <p>POST <a href="https://ifpi-web-nodejs.herokuapp.com/usuarios">https://ifpi-web-nodejs.herokuapp.com/posts</a>
-  para adicionar um novo post. <br>  O Post deve conter os seguintes
+  <p>POST <a href="https://ifpi-web-nodejs.herokuapp.com/postagens">https://ifpi-web-nodejs.herokuapp.com/postagens</a>
+  para adicionar uma nova postagem. <br>  A postagem deve conter os seguintes
   atributos { titulo: String, texto: String, autor: String }</p>
   </div>
   `)
