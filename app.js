@@ -9,5 +9,5 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/', routes);
 conectaMongoDB();
-const PORTA = process.env.PORT || 3000
+const PORTA = process.env.PORT || 80
 app.listen(PORTA, () => console.log('App online...'));
