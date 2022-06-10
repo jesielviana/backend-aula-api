@@ -1,7 +1,7 @@
 
 # Back-end API 
 
-### Esta aplicação é um modelo utilizada nas aulas de Web do IFPI Campus Picos pelo Prof. Jesiel Viana
+Esta aplicação é um modelo utilizada nas aulas de Web do IFPI Campus Picos pelo Prof. Jesiel Viana
 
 ## Tecnologias utilizadas
 - Javascript
@@ -20,14 +20,12 @@ $ npm install
 ## Rodar o app
 
 ```bash
-# development
 $ npm start
 ```
 
-## Testar
+## Executar testes
 
 ```bash
-# run tests
 $ npm run test
 ```
 ## Fale comigo
