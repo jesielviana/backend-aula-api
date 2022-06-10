@@ -1,11 +1,11 @@
-class UsersController {
-  constructor(User) {
-    this.User = User;
+class UsuariosController {
+  constructor (Usuario) {
+    this.Usuario = Usuario;
   }
 
   async consultaTodos() {
     try {
-      return await this.User.find({});
+      return await this.Usuario.find({});
     } catch (err) {
       throw new Error(err);
     }
@@ -13,24 +13,25 @@ class UsersController {
 
   async consultaPorId(id) {
     try {
-      return await this.User.findById(id, '_id nome idade dataAlteracao');
+      return await this.Usuario.findById(id, '_id nome idade dataAlteracao');
     } catch (err) {
       throw new Error(err);
     }
   }
 
-  async adicionar(userDTO) {
+  async adicionar(UsuarioDTO) {
     try {
-      const user = new this.User(userDTO);
-      await user.save();
+      const Usuario = new this.Usuario(UsuarioDTO);
+      const UsuarioSalvo = await Usuario.save();
+      return UsuarioSalvo;
     } catch (err) {
       throw new Error(err);
     }
   }
 
-  async alterar(id, userDTO) {
+  async alterar(id, UsuarioDTO) {
     try {
-      await this.User.findOneAndUpdate({ _id: id }, userDTO);
+      await this.Usuario.findOneAndUpdate({ _id: id }, UsuarioDTO);
     } catch (err) {
       throw new Error(err);
     }
@@ -38,11 +39,11 @@ class UsersController {
 
   async remover(id) {
     try {
-      await this.User.deleteOne({ _id: id });
+      await this.Usuario.deleteOne({ _id: id });
     } catch (err) {
       throw new Error(err);
     }
   }
 }
 
-module.exports = UsersController;
+module.exports = UsuariosController;

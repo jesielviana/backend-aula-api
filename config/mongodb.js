@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
 
 function conectaMongoDB() {
-  mongoose.connect(
-    'mongodb://upucxxkhq2vmykapvgxp:VKuZVNDp6cNElfVF2IlK@bwcnupplrmojfvk-mongodb.services.clever-cloud.com:27017/bwcnupplrmojfvk',
-    { useUnifiedTopology: true, useNewUrlParser: true }
+  mongoose.connect('mongodb://localhost:27017/backend_aula_api', { useUnifiedTopology: true, useNewUrlParser: true }
   );
 
   const db = mongoose.connection;
