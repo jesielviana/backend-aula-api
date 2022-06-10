@@ -3,27 +3,34 @@
 
 ### Esta aplicação é um modelo utilizada nas aulas de Web do IFPI Campus Picos pelo Prof. Jesiel Viana
 
+## Tecnologias utilizadas
+- Javascript
+- Node.js
+- Express
+- Jest
 
-## Installation
+## Instalação
 
 ```bash
+$ git clone https://github.com/jesielviana/backend-aula-api.git
+$ cd backend-aula-api
 $ npm install
 ```
 
-## Running the app
+## Rodar o app
 
 ```bash
 # development
 $ npm start
 ```
 
-## Test
+## Testar
 
 ```bash
 # run tests
 $ npm run test
 ```
-## Stay in touch
+## Fale comigo
 
 - Author - [Jesiel Viana](https://jesielviana.com)
 - Twitter - [@jesielviana](https://twitter.com/jesielviana)
