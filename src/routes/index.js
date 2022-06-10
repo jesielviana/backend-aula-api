@@ -11,20 +11,20 @@ router.get('/', (req, res) => {
   <h2 style="text-align: center;">App está Online :)</h2>
 
   <h3> API de Usuários</h3>
-  <p>GET <a href="https://ifpi-web-nodejs.herokuapp.com/usuarios">https://ifpi-web-nodejs.herokuapp.com/usuarios</a>
+  <p>GET <a href="http://localhost/usuarios">http://localhost/usuarios</a>
   para consultar todos os usuários cadastrados. <br> É retornado uma lista de usuários 
   com o seguinte formato: {nome: String, idade: Number, dataAlteracao: Date, id: String}</p>
 
-  <p>POST <a href="https://ifpi-web-nodejs.herokuapp.com/usuarios">https://ifpi-web-nodejs.herokuapp.com/usuarios</a>
+  <p>POST <a href="http://localhost/usuarios">http://localhost/usuarios</a>
   para adicionar um novo usuário. <br>  O usuário deve conter os seguintes
   atributos { nome: String, idade: Number }</p>
 
   <h3> API de Postagens</h3>
-  <p>GET <a href="https://ifpi-web-nodejs.herokuapp.com/postagens">https://ifpi-web-nodejs.herokuapp.com/postagens</a>
+  <p>GET <a href="http://localhost/postagens">http://localhost/postagens</a>
   para consultar todas postagens cadastrados. <br> É retornado uma lista de postagens 
   com o seguinte formato: {titulo: String, texto: String, dataAlteracao: Date, autor: String, id: String}</p>
 
-  <p>POST <a href="https://ifpi-web-nodejs.herokuapp.com/postagens">https://ifpi-web-nodejs.herokuapp.com/postagens</a>
+  <p>POST <a href="http://localhost/postagens">http://localhost/postagens</a>
   para adicionar uma nova postagem. <br>  A postagem deve conter os seguintes
   atributos { titulo: String, texto: String, autor: String }</p>
   </div>
